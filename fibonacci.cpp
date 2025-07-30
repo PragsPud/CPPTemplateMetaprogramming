@@ -1,6 +1,4 @@
 
-#include <iostream>
-
 template<unsigned n>
 struct fib {
     inline static constexpr unsigned value = fib<n-1>::value + fib<n-2>::value;
