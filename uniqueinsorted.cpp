@@ -1,4 +1,4 @@
-
+#include <iostream>
 template<int... i>
 struct Vector;
 
