@@ -19,6 +19,7 @@ struct CheckAscending<Vector<rest...>> {
 int main()
 {
     static_assert(CheckAscending<Vector<1,2,3,4>>::val);
+    static_assert(CheckAscending<Vector<1,2,3,3,3,3,3,4>>::val);
     static_assert(CheckAscending<Vector<1,2,4>>::val);
     static_assert(!CheckAscending<Vector<1,2,4,3>>::val);
     static_assert(CheckAscending<Vector<>>::val);
